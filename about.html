@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="/assets/49a4b376e8be067386d2b4c09a3537bc.jpg" />
+    <title>Header and Footer Borders</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 overflow-x-hidden ">
+
+    <header class=" top-0 z-20  mx-auto flex flex-row w-full items-center justify-between border-b-4 border-gray-500 px-10 pb-2 md:relative">
+        <button><img class="w-16 h-16 rounded-full mr-9 hover:skew-y-12" src="/assets/49a4b376e8be067386d2b4c09a3537bc.jpg"></button>
+        
+        <nav class="flex space-x-10">
+        <div class="text-black font-serif">
+          <a id="homeBtn" class=" p-2 ml-5 hover:text-purple-700 font-bold text-xl box-underline fants">Home</a>
+          <a id="aboutBtn" class=" p-2 ml-5 hover:text-purple-700 font-bold text-xl box-underline fants">About</a>
+        </div>
+        <div class="text-black border-l-4 border-gray-500">
+          <a id="signInBtn" class=" p-2 ml-5 w-32 h-12 hover:text-purple-700 hover:scale-110  font-bold text-xl box-underline ">Sign In</a>  
+        </div>
+      </nav>
+      </header>
+      
+      <main class="content h-screen bg-blue-200 w-full px-2 flex place-items-center overflow-auto">
+        <div class="h-4/5 grid grid-cols-2  font-serif "> 
+        <div class=" text-4xl font-bold p-11 overflow-visible border-r-2 border-gray-500">
+            <span class="text-3xl fants">So, Who am I? </span>
+            </span>
+            <div class=" p-5 text-base">I'm <span class="underline under text-xl">Mike Joseph Hubahib</span>
+                Currently studying in <span class="text-purple-700">Consolatrix College of Toledo City</span> .
+                I'm on a quest to conquer code!  While the siren song of the couch can be strong, I'm determined to unlock the world of programming. This is my space to document my adventures and misadventures as I tackle new challenges and hopefully become a coding pro.
+                 </div>  
+        </div>
+        <div class="skill md:32 lg:w-48">
+            <div class="fants text-3xl font-bold"> My Skill:</div>
+            <li><h2>Html</h2>
+                <span class="bar"><span class="html"></span></span>
+            </li>
+            <li><h2>Css</h2>
+                <span class="bar"><span class="css"></span></span>
+            </li>
+            <li><h2>Tailwind</h2>
+                <span class="bar"><span class="tailwind"></span></span>
+            </li>
+            <li><h2>Javascript</h2>
+                <span class="bar"><span class="js"></span></span>
+            </li>
+            <li><h2>Nodejs</h2>
+                <span class="bar"><span class="nodejs"></span></span>
+            </li>
+            <li><h2>Python</h2>
+                <span class="bar"><span class="python"></span></span>
+            </li>
+            
+    </div>
+        
+        
+    </main>
+    <section></section>
+
+    <footer class="bg-black border-t-4 border-gray-500  ">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <div class="flex flex-row justify-center px-36">
+                <a class="pr-3" href="https://m.facebook.com/mikejoseph.hubahib/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+                </a>  
+                <a class="pr-3" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+                </a>
+                <a class="pr-3" href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+                </a>
+                <a class="pr-3" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+                </a>
+            </div>
+            <p class="text-center text-white">&copy; 2024 Company Ltd. JCR Gaming.</p>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <style>
+      .box-underline {
+            position: relative;
+        }
+
+        .box-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent; /* Initial color */
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .box-underline:hover::after {
+            background-color: purple;
+      
+        }
+
+        .fants{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .skill{
+            height: auto;
+            width: 300px;
+            padding: 15px;
+            box-shadow: 0 14px 28px rgb(0,0,0,0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .skill li{
+            margin: 5px 0;
+            padding: 10px;
+
+        }
+        .bar{
+            background:#353b48;
+            width: 250px;
+            display: block;
+            height: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+        .bar :hover{
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .bar span{
+            height:10px ;
+            float: left;
+            background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252,103,103,1)100%);
+        }
+        .html{
+            width: 60%;
+            animation: html 3s;
+        }
+        .css{
+            width: 70%;
+            animation: html 3s;
+        }
+        .js{
+            width: 50%;
+            animation: html 3s;
+        }
+        .nodejs{
+            width: 30%;
+            animation: html 3s;
+        }
+        .python{
+            width: 1%;
+            animation: html 3s;
+        }
+        .tailwind{
+            width: 40%;
+            animation: html 3s;
+        }
+        @keyframes html{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        @keyframes css{
+            0%{
+                width: 70%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        @keyframes js{
+            0%{
+                width: 70%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        @keyframes nodejs{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        @keyframes python{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+        @keyframes scala{
+            0%{
+                width: 0%;
+            }
+            100%{
+                width: 90%;
+            }
+        }
+    </style>
+<script src="index.js"></script>
+</body>
+</html>

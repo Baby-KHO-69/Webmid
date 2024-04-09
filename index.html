@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="/assets/49a4b376e8be067386d2b4c09a3537bc.jpg" />
+    <title>Mike</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 overflow-x-hidden">
+
+    <header class=" top-0 z-20  mx-auto flex flex-row w-full items-center justify-between border-b-4 border-gray-500 px-10 pb-2 md:relative">
+        <a><img class="w-16 h-16 rounded-full mr-9 hover:skew-y-12" src="/assets/49a4b376e8be067386d2b4c09a3537bc.jpg"></a>
+        <nav class="flex space-x-10">
+        <div class="text-black font-serif">
+          <a id="homeBtn" class=" p-2 ml-5 hover:text-purple-700 font-bold text-xl box-underline fants">Home</a>
+          <a id="aboutBtn" class=" p-2 ml-5 hover:text-purple-700 font-bold text-xl box-underline fants">About</a>
+        </div>
+        <div class="text-black border-l-4 border-gray-500">
+          <a id="signInBtn" class=" p-2 ml-5 w-32 h-12 hover:text-purple-700 hover:scale-110  font-bold text-xl box-underline ">Sign In</a>  
+        </div>
+      </nav>
+      </header>
+      
+      <main class="content h-screen bg-blue-200 w-full px-2 flex place-items-center">
+        <div class="h-4/5 grid grid-cols-2  font-serif "> 
+        <div class=" left-0 text-4xl font-bold p-11"><span class="underline under">Mike Joseph Hubahib.</span>
+            <div class="text-sm">Tajao, Pinamungajan, Cebu</div>
+        </div>
+        <div class="pr-9 w-64 h-64"> <img  class="rounded-full" src="/assets/430393096_416398297593384_1859771656670921730_n.jpg"></div>
+        </div>
+    </main>
+
+    <footer class="bg-black border-t-4 border-gray-500 flex flex-grow-">
+        <div class="container mx-auto px-4 py-4 text-center">
+            <div class="flex flex-row justify-center px-36">
+                <a class="pr-3" href="https://m.facebook.com/mikejoseph.hubahib/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/facebook-new.png" />
+                </a>  
+                <a class="pr-3" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/instagram-new.png" />
+                </a>
+                <a class="pr-3" href="https://messenger.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/facebook-messenger--v2.png" />
+                </a>
+                <a class="pr-3" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
+                </a>
+            </div>
+            <p class="text-center text-white">&copy; 2024 Company Ltd. JCR Gaming.</p>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <style>
+      .box-underline {
+            position: relative;
+        }
+
+        .box-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 1px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: transparent; /* Initial color */
+            transition: background-color 0.5s ease-in-out;
+        }
+
+        .box-underline:hover::after {
+            background-color: purple;
+      
+        }
+
+        .fants{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+<script src="index.js"></script>
+</body>
+</html>
